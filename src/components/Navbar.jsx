@@ -5,12 +5,11 @@ import { HomeOutlined, MoneyCollectOutlined, BulbOutlined, FundOutlined, MenuOut
 
 import icon from '../images/cryptocurrency.png';
 
-const Navbar = () => {
-    return (
-        <div className='nav-container'>
 
-        </div>
-    )
+const Navbar = () => {
+  return (
+    <div>Navbar</div>
+  )
 }
 
-export default Navbar;
+export default Navbar

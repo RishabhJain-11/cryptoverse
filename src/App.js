@@ -1,20 +1,15 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-import { Layout, Typography, Space, Avatar } from 'antd';
+import { Layout, Typography, Space } from 'antd';
+
+import { Exchanges, Homepage, News, Cryptocurrencies, CryptoDetails, Navbar } from './components';
+import './App.css';
+
 const App = () => {
     return (
         <div className='app'>
             <div className='navbar'>
-                <Avatar src />
-                <Typography.Title level={2} className='logo'>
-                    <Link to="/">
-                        Cryptoverse
-                    </Link>
-                </Typography.Title>
-
-                {/* <Button className='menu-control-container'>
-
-                </Button> */}
+                <Navbar/>
             </div>
             <div className='main'>
 
