@@ -1,0 +1,42 @@
+Assignment no. 1
+
+import numpy as nm
+import pandas as pd
+
+// it will read the dataset
+file = pd.read_csv()
+
+
+// it will show only the selected amount of entries from start
+file.head(5)
+
+// it will show only the selected amount of entries from tail end
+file.tail(5)
+
+// describing the file dataset
+file.describe()
+
+// shape of file
+file.shape
+
+// show missing values in dataset
+file.isnull().sum()
+
+// datatype of each column
+file.dtypes
+
+//number of 0's in dataset
+file.count(0).sum()
+
+//Mean, Max and Min of Age column in dataset
+file['Age'].mean()
+
+file['Age'].max()
+
+file['Age'].min()
+
+// Reverse a column(MaxHR -> MaxHRNew) (changing the name of the column)
+file.rename(columns = {'MaxHR' : 'MaxHrNew})
+
+// Replacing Yes by 1 and No by 0 in AHD columns
+file['AHD'].replace({'Yes': 1, 'No' : 0})
